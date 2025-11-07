@@ -14,7 +14,7 @@ class BadgePrinter:
             return "Invalid first name."
         elif not clean_last_name.replace(' ','').isalpha():
             return "Invalid last name."
-        self.first_name= clean_first_name.capitalize()
+        self.first_name= clean_first_name.title()
         self.last_name= clean_last_name.upper()
         return f"{self.last_name},{self.first_name}"
     
